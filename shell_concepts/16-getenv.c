@@ -6,7 +6,7 @@
 char *_getenv(const char *name)
 {
 	int index, len;
-	extern char *environ;
+	extern char **environ;
 
 	len = strlen(name);
 	for (index = 0; environ[index]; index++)
@@ -19,7 +19,8 @@ char *_getenv(const char *name)
 
 }
 
-int main(void) {
+int main(void)
+{
 	printf("PATH : %s\n", _getenv("PATH"));
 	printf("HOME : %s\n", _getenv("HOME"));
 	printf("ROOT : %s\n", _getenv("ROOT"));
