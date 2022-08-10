@@ -19,10 +19,10 @@ char *_getenv(const char *name)
 
 }
 
-int main () {
-   printf("PATH : %s\n", _getenv("PATH"));
-   printf("HOME : %s\n", _getenv("HOME"));
-   printf("ROOT : %s\n", _getenv("ROOT"));
+int main (void) {
+	printf("PATH : %s\n", _getenv("PATH"));
+	printf("HOME : %s\n", _getenv("HOME"));
+	printf("ROOT : %s\n", _getenv("ROOT"));
 
-   return(0);
+return (0);
 }
